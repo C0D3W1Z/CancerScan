@@ -3,16 +3,6 @@
 - Download the model file from: https://drive.google.com/file/d/1WvhQhTeAny2Xz77786yQjFvLzfZp8ZDI/view?usp=sharing
 - Place the file into "CancerScan/SkinCancerDetector/model/skincancermodel/"
 
-## Voiceflow Links (app needs to be running, .vf files included in repository):
-
--Chat Bot: https://creator.voiceflow.com/prototype/644e298ed0125e2d5e52ee90
-
--Lung Cancer Detection: https://creator.voiceflow.com/prototype/644dad2d3e87a3cf4f4f3379
-
--Mental Training: https://creator.voiceflow.com/prototype/644dc245d0125e2d5e52ee1c
-
--Physical Training: https://creator.voiceflow.com/prototype/644dcb469e62b46d9a1d7666
-
 ## Inspiration
 
 Cancer, the second leading cause of death in the United States, is often viewed as a daunting and overwhelming topic. Cancer can affect anyone, regardless of their age, gender, or background. In our current state, it is crucial that we work towards reducing the burden of cancer on individuals, families, and communities. As such, it is imperative that we increase access to preventative cancer screenings and resources for those living with cancer. Our inspiration for developing CancerScan stems from our fundamental belief that everyone deserves access to the tools necessary to take control of their own health and well-being. Furthermore, we were inspired by the knowledge that early detection is paramount in the fight against cancer. By providing an easy-to-use and accessible platform for cancer screening, we hope to empower individuals to take proactive measures towards their health and potentially detect any issues before they escalate. Additionally, we were also inspired by CancerScan's potential to address healthcare disparities and bridge gaps in access to care for underserved communities that may face greater barriers to screening and care. Given the significant positive impact that a platform for cancer detection and management could have on countless lives, we developed CancerScan with the goal of making a real difference in people's lives and contributing to a healthier and more equitable future.
