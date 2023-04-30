@@ -1,0 +1,110 @@
+model:
+  names:
+  - timm_image
+  timm_image:
+    checkpoint_name: swin_base_patch4_window7_224
+    mix_choice: all_logits
+    data_types:
+    - image
+    train_transform_types:
+    - resize_shorter_side
+    - center_crop
+    - trivial_augment
+    val_transform_types:
+    - resize_shorter_side
+    - center_crop
+    image_norm: imagenet
+    image_size: null
+    max_img_num_per_col: 2
+data:
+  image:
+    missing_value_strategy: zero
+  text:
+    normalize_text: false
+  categorical:
+    minimum_cat_count: 100
+    maximum_num_cat: 20
+    convert_to_text: true
+  numerical:
+    convert_to_text: false
+    scaler_with_mean: true
+    scaler_with_std: true
+  document:
+    missing_value_strategy: zero
+  label:
+    numerical_label_preprocessing: standardscaler
+  pos_label: null
+  mixup:
+    turn_on: false
+    mixup_alpha: 0.8
+    cutmix_alpha: 1.0
+    cutmix_minmax: null
+    prob: 1.0
+    switch_prob: 0.5
+    mode: batch
+    turn_off_epoch: 5
+    label_smoothing: 0.1
+  templates:
+    turn_on: false
+    num_templates: 30
+    template_length: 2048
+    preset_templates:
+    - super_glue
+    - rte
+    custom_templates: null
+optimization:
+  optim_type: adamw
+  learning_rate: 0.0001
+  weight_decay: 0.001
+  lr_choice: layerwise_decay
+  lr_decay: 0.9
+  lr_schedule: cosine_decay
+  max_epochs: 10
+  max_steps: -1
+  warmup_steps: 0.1
+  end_lr: 0
+  lr_mult: 1
+  patience: 10
+  val_check_interval: 0.5
+  check_val_every_n_epoch: 1
+  skip_final_val: false
+  gradient_clip_val: 1
+  gradient_clip_algorithm: norm
+  track_grad_norm: -1
+  log_every_n_steps: 10
+  val_metric: null
+  top_k: 3
+  top_k_average_method: greedy_soup
+  efficient_finetune: null
+  lora:
+    module_filter: null
+    filter:
+    - query
+    - value
+    - ^q$
+    - ^v$
+    - ^k$
+    - ^o$
+    r: 8
+    alpha: 8
+  loss_function: auto
+  focal_loss:
+    alpha: null
+    gamma: 2.0
+    reduction: mean
+env:
+  num_gpus: 1
+  num_nodes: 1
+  batch_size: 128
+  per_gpu_batch_size: 8
+  eval_batch_size_ratio: 4
+  per_gpu_batch_size_evaluation: null
+  precision: 16
+  num_workers: 2
+  num_workers_evaluation: 2
+  fast_dev_run: false
+  deterministic: false
+  auto_select_gpus: true
+  strategy: null
+  deepspeed_allgather_size: 1000000000.0
+  deepspeed_allreduce_size: 1000000000.0
