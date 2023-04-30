@@ -8,14 +8,14 @@ CancerScan is an artificial intelligence powered, comprehensive cancer detection
 
 Cancerscan offers the following features:
 
-Intuitive and User-Friendly Dashboard: Our dashboard is designed to be intuitive and user-friendly, with the goal of making the helpful features of CancerScan accessible to anyone, no matter what their technical background is.
-Skin Cancer Identification with Computer Vision: Our advanced machine learning model coupled with computer vision technology allows us to accurately identify the risk a user has of contracting or having contracted skin cancer, allowing users to detect skin cancer early and seek treatment as soon as possible.
-Lung Cancer Identification with Machine Learning: Our machine learning model uses input from users in the form of answers to certain questions to identify the risk of lung cancer in our users. This feature allows for early detection and timely treatment of lung cancer.
-Personalized AI-Powered Chatbot: Our AI and LLM powered chatbot is designed to provide users with personalized information about their condition.
-Mental Training System: Our AI powered mental training system provides users with helpful and personalized mental exercises to help with successful treatment and quick recovery.
-Physical Exercise Guidance System: Our physical exercise guidance system is designed to help users stay in shape for better treatment outcomes and improved overall health by providing users with personalized exercise plans.
-Web3 Integrated NFT Achievement System: Our Web3 integrated NFT achievement system motivates users to use CancerScan to stay on top of cancer screenings and treatment. Users earn rewards for completing cancer skin and lung cancer identification scans and participating in mental and physical exercises.
-Encrypted Storage of Account Info: We prioritize user security by encrypting all sensitive account info using Argon2 and PassLib and utilizing a secure SQL database system for storage of user info. This ensures that all sensitive user data is secure and protected.
+1. Intuitive and User-Friendly Dashboard: Our dashboard is designed to be intuitive and user-friendly, with the goal of making the helpful features of CancerScan accessible to anyone, no matter what their technical background is.
+2. Skin Cancer Identification with Computer Vision: Our advanced machine learning model coupled with computer vision technology allows us to accurately identify the risk a user has of contracting or having contracted skin cancer, allowing users to detect skin cancer early and seek treatment as soon as possible.
+3. Lung Cancer Identification with Machine Learning: Our machine learning model uses input from users in the form of answers to certain questions to identify the risk of lung cancer in our users. This feature allows for early detection and timely treatment of lung cancer.
+4. Personalized AI-Powered Chatbot: Our AI and LLM powered chatbot is designed to provide users with personalized information about their condition.
+5. Mental Training System: Our AI powered mental training system provides users with helpful and personalized mental exercises to help with successful treatment and quick recovery.
+6. Physical Exercise Guidance System: Our physical exercise guidance system is designed to help users stay in shape for better treatment outcomes and improved overall health by providing users with personalized exercise plans.
+7. Web3 Integrated NFT Achievement System: Our Web3 integrated NFT achievement system motivates users to use CancerScan to stay on top of cancer screenings and treatment. Users earn rewards for completing cancer skin and lung cancer identification scans and participating in mental and physical exercises.
+8. Encrypted Storage of Account Info: We prioritize user security by encrypting all sensitive account info using Argon2 and PassLib and utilizing a secure SQL database system for storage of user info. This ensures that all sensitive user data is secure and protected.
 
 ## How we built it
 
