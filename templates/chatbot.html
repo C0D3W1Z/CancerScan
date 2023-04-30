@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}CancerScan - Skin Cancer{% endblock %}
+
+{% block code %}
+<div style="height: 20px;"></div>
+<link href="static/assets/style.css" rel="stylesheet">
+<div class="app-container" style="height: 10000px;">
+  <div class="sidebar">
+    <ul class="sidebar-list">
+      <li class="sidebar-list-item">
+        <a href="/dashboard">
+          <span>Guide</span>
+        </a>
+      </li>
+      <li class="sidebar-list-item active">
+        <a href="/chatbot">
+          <span>Chat Bot</span>
+        </a>
+      </li>
+      <li style="background-color: #0059F7; height: 2px; margin-top: 0; padding-top: 0;">
+        <a>&nbsp;</a>
+     </li>  
+      <li class="sidebar-list-item">
+        <a href="/skin-cancer">
+          <span>Skin Cancer Identification</span>
+        </a>
+      </li>
+     
+      <li class="sidebar-list-item">
+        <a href="/lung-cancer">
+          <span>Lung Cancer Identification</span>
+        </a>
+      </li>
+      <li style="background-color: #0059F7; height: 2px; margin-top: 0; padding-top: 0;">
+        <a>&nbsp;</a>
+     </li>  
+      <li class="sidebar-list-item">
+        <a href="/mental-training">
+          <span>Mental Training</span>
+        </a>
+      </li>
+      <li class="sidebar-list-item">
+        <a href="/physical-training">
+          <span>Physical Training</span>
+        </a>
+      </li>
+      <li style="background-color: #0059F7; height: 2px; margin-top: 0; padding-top: 0;">
+        <a>&nbsp;</a>
+     </li>  
+      <li class="sidebar-list-item">
+        <a href="/rewards">
+          <span>Rewards</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="app-content">
+    <div class="app-content-header">
+      <h1 class="app-content-headerText">Chat Bot</h1>
+      <h2 id="getstarted" style="position: relative; top: 267px; right: 17%; z-index: 999999; color: white; font-weight: 500; font-size: 30px;">Get Started</h2>
+    </div>
+
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '644dc245c20a470007df081e' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production'
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+
+
+    <div style="height: 50px;"></div>
+    <div class="container" style="width: 50%; margin-left: 0; height: 480px !important; ">
+      <div class="text-center" style="height: 480px;">
+        <div class="p-5 bg-primary rounded-3" style="height: 410px;">
+          <div style="position: relative; bottom: 50px;">
+          <div class="py-3">
+            <h2 class="mt-3 fs-4 fs-sm-7 latter-sp-3 lh-base fw-semi-bold">Using the Chat Bot:</h2>
+          </div>
+          <ol style="font-size: 30px; color:white; font-weight: 500; margin: 30px;">
+            <li>Click the button</li>
+            <li>Ask questions related to Cancer</li>
+            <li>Examine the response from the Chat Bot</li>
+          </ol>
+          </div>
+
+  </div>
+</div>
+
+{% endblock %}

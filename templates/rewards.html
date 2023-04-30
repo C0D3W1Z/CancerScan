@@ -1,0 +1,249 @@
+{% extends "base.html" %}
+
+{% block title %}CancerScan - Rewards{% endblock %}
+
+{% block code %}
+<div style="height: 20px;"></div>
+<link href="static/assets/style.css" rel="stylesheet">
+<div class="app-container" style="height: 10000px;">
+  <div class="sidebar">
+    <ul class="sidebar-list">
+      <li class="sidebar-list-item">
+        <a href="/dashboard">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> -->
+          <span>Guide</span>
+        </a>
+      </li>
+      <li class="sidebar-list-item">
+        <a href="/chatbot">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> -->
+          <span>Chat Bot</span>
+        </a>
+      </li>
+      <li style="background-color: #0059F7; height: 2px; margin-top: 0; padding-top: 0;">
+        <a>&nbsp;</a>
+     </li>  
+      <li class="sidebar-list-item">
+        <a href="/skin-cancer">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> -->
+          <span>Skin Cancer Identification</span>
+        </a>
+      </li>
+     
+      <li class="sidebar-list-item">
+        <a href="/lung-cancer">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> -->
+          <span>Lung Cancer Identification</span>
+        </a>
+      </li>
+      <li style="background-color: #0059F7; height: 2px; margin-top: 0; padding-top: 0;">
+        <a>&nbsp;</a>
+     </li>  
+      <li class="sidebar-list-item">
+        <a href="/mental-training">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> -->
+          <span>Mental Training</span>
+        </a>
+      </li>
+      <li class="sidebar-list-item">
+        <a href="/physical-training">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> -->
+          <span>Physical Training</span>
+        </a>
+      </li>
+      <li style="background-color: #0059F7; height: 2px; margin-top: 0; padding-top: 0;">
+        <a>&nbsp;</a>
+     </li>  
+      <li class="sidebar-list-item active">
+        <a href="/rewards">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg> -->
+          <span>Rewards</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="app-content">
+    <div class="app-content-header">
+      <h1>Reward Shop</h1>
+      <div style="padding-right: 5px;">
+      <div style="padding-right: 20px; padding-top: 6px; padding-bottom: 1px; padding-left: 20px; border-style: solid; border-color: white; border-radius: 15px; background-color: rgb(99, 99, 99);">
+        <h3>Points: {{points}}</h3>
+      </div>
+    </div>
+    </div>
+    <style>
+        body {
+        margin: 0;
+      }
+
+      .popup-content {
+        margin: 0 auto;
+      }
+      .container {
+        display: flex;
+      }
+      
+      .box {
+        width: 287px;
+        height: 450px;
+        /* border: 1px solid #ccc; */
+        margin-right: 10px;
+      }
+
+      img {
+        border-radius: 37px;
+      }
+
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 287px;
+      }
+      </style>
+
+
+  <script>
+    function showPopup1() {
+      document.getElementById("popup1").style.display = "block";
+      document.addEventListener("keydown", handleKeyDown);
+    }
+
+    function showPopup2() {
+      document.getElementById("popup2").style.display = "block";
+      document.addEventListener("keydown", handleKeyDown);
+    }
+
+    function showPopup3() {
+      document.getElementById("popup3").style.display = "block";
+      document.addEventListener("keydown", handleKeyDown);
+    }
+
+    function showPopup4() {
+      document.getElementById("popup4").style.display = "block";
+      document.addEventListener("keydown", handleKeyDown);
+    }
+
+    function closePopup1() {
+      var textValue = document.getElementById("textInput").value;
+      // Do something with the entered text, e.g., submit a form or perform an action
+      alert("Entered text: " + textValue);
+      document.getElementById("popup1").style.display = "none";
+      document.removeEventListener("keydown", handleKeyDown);
+    }
+
+    function closePopup2() {
+      var textValue = document.getElementById("textInput").value;
+      // Do something with the entered text, e.g., submit a form or perform an action
+      alert("Entered text: " + textValue);
+      document.getElementById("popup2").style.display = "none";
+      document.removeEventListener("keydown", handleKeyDown);
+    }
+
+    function closePopup3() {
+      var textValue = document.getElementById("textInput").value;
+      // Do something with the entered text, e.g., submit a form or perform an action
+      alert("Entered text: " + textValue);
+      document.getElementById("popup3").style.display = "none";
+      document.removeEventListener("keydown", handleKeyDown);
+    }
+
+    function closePopup4() {
+      var textValue = document.getElementById("textInput").value;
+      // Do something with the entered text, e.g., submit a form or perform an action
+      alert("Entered text: " + textValue);
+      document.getElementById("popup4").style.display = "none";
+      document.removeEventListener("keydown", handleKeyDown);
+    }
+  </script>
+
+      <div style="padding-top: 30px;"></div>
+      <div class="container">
+        <div class="box">
+          <img src="static/assets/img/NFT2.png" width="287px" height="287px">
+          <div style="padding-top: 20px;">
+            <h1 style="text-align: center;">Price: 10 Points</h1>
+          </div>
+          <div style="padding-top: 20px;">
+            <button class="button" onclick="showPopup1()">Purchase this NFT</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="static/assets/img/NFT4.png" width="287px" height="287px">
+          <div style="padding-top: 20px;">
+            <h1 style="text-align: center;">Price: 20 Points</h1>
+          </div>
+          <div style="padding-top: 20px;">
+            <button class="button" onclick="showPopup2()">Purchase this NFT</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="static/assets/img/NFT1.png" width="287px" height="287px">
+          <div style="padding-top: 20px;">
+            <h1 style="text-align: center;">Price: 30 Points</h1>
+          </div>
+          <div style="padding-top: 20px;">
+            <button class="button" onclick="showPopup3()">Purchase this NFT</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="static/assets/img/NFT3.png" width="287px" height="287px">
+          <div style="padding-top: 20px;">
+            <h1 style="text-align: center;">Price: 40 Points</h1>
+          </div>
+          <div style="padding-top: 20px;">
+            <button class="button" onclick="showPopup4()">Purchase this NFT</button>
+          </div>
+        </div>
+        <div id="popup1" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+          <div class="popup-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); max-width: 300px; text-align: center">
+            <h3 style="color:black">Enter your ETH address:</h3>
+            <form method="post">
+              <input type="text" id="address1" name="address1" placeholder="Ethereum Address">
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div id="popup2" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+          <div class="popup-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); max-width: 300px; text-align: center">
+            <h3 style="color:black">Enter your ETH address:</h3>
+            <form method="post">
+              <input type="text" id="address2" name="address2" placeholder="Ethereum Address">
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div id="popup3" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+          <div class="popup-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); max-width: 300px; text-align: center">
+            <h3 style="color:black">Enter your ETH address:</h3>
+            <form method="post">
+              <input type="text" id="address3" name="address3" placeholder="Ethereum Address">
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div id="popup4" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;">
+          <div class="popup-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); max-width: 300px; text-align: center">
+            <h3 style="color:black">Enter your ETH address:</h3>
+            <form method="post">
+              <input type="text" id="address4" name="address4" placeholder="Ethereum Address">
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

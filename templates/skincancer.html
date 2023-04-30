@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}CancerScan - Skin Cancer{% endblock %}
+
+{% block code %}
+<div style="height: 20px;"></div>
+<link href="static/assets/style.css" rel="stylesheet">
+<div class="app-container" style="height: 10000px;">
+  <div class="sidebar">
+    <ul class="sidebar-list">
+      <li class="sidebar-list-item">
+        <a href="/dashboard">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> -->
+          <span>Guide</span>
+        </a>
+      </li>
+      <li class="sidebar-list-item">
+        <a href="/chatbot">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> -->
+          <span>Chat Bot</span>
+        </a>
+      </li>
+      <li style="background-color: #0059F7; height: 2px; margin-top: 0; padding-top: 0;">
+        <a>&nbsp;</a>
+     </li>  
+      <li class="sidebar-list-item active">
+        <a href="/skin-cancer">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> -->
+          <span>Skin Cancer Identification</span>
+        </a>
+      </li>
+     
+      <li class="sidebar-list-item">
+        <a href="/lung-cancer">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> -->
+          <span>Lung Cancer Identification</span>
+        </a>
+      </li>
+      <li style="background-color: #0059F7; height: 2px; margin-top: 0; padding-top: 0;">
+        <a>&nbsp;</a>
+     </li>  
+      <li class="sidebar-list-item">
+        <a href="/mental-training">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> -->
+          <span>Mental Training</span>
+        </a>
+      </li>
+      <li class="sidebar-list-item">
+        <a href="/physical-training">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> -->
+          <span>Physical Training</span>
+        </a>
+      </li>
+      <li style="background-color: #0059F7; height: 2px; margin-top: 0; padding-top: 0;">
+        <a>&nbsp;</a>
+     </li>  
+      <li class="sidebar-list-item">
+        <a href="/rewards">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg> -->
+          <span>Rewards</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="app-content">
+    <div class="app-content-header">
+
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+                <div class="paddingforleft">
+                    <h3 style="text-align: center; width: 200px">Check your camera!</h3>
+                    <p style="text-align: center; padding: 20px;">For optimal assistance, please ensure that your skin is clearly visible. Press the "Capture" button when your skin is visible.</p>
+                    <div class="nextbtnpad">
+                      <form action="/skin-results" method="post">
+                        <center>
+                          <button type="submit" class="btn btn-primary custom-btn">Capture</button>
+                        </center>
+                      </form>
+                </div>
+            </div>
+        <img style="padding-left: 50px;" src="{{ url_for('video_feed') }}" width="1010px">
+        <br>
+        <div style="text-align: center;" class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    
+          <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+          <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+          <nav id="navbar" class="navbar" style="text-align: center;">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

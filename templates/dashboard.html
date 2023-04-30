@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %}CancerScan - About{% endblock %}
+
+{% block code %}
+
+<div style="height: 20px;"></div>
+<link href="static/assets/style.css" rel="stylesheet">
+<div class="app-container" style="height: 10000px;">
+  <div class="sidebar">
+    <ul class="sidebar-list">
+      <li class="sidebar-list-item active">
+        <a href="/dashboard">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> -->
+          <span>Guide</span>
+        </a>
+      </li>
+      <li class="sidebar-list-item">
+        <a href="/chatbot">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> -->
+          <span>Chat Bot</span>
+        </a>
+      </li>
+      <li style="background-color: #0059F7; height: 2px; margin-top: 0; padding-top: 0;">
+        <a>&nbsp;</a>
+     </li>  
+      <li class="sidebar-list-item">
+        <a href="/skin-cancer">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> -->
+          <span>Skin Cancer Identification</span>
+        </a>
+      </li>
+     
+      <li class="sidebar-list-item">
+        <a href="/lung-cancer">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> -->
+          <span>Lung Cancer Identification</span>
+        </a>
+      </li>
+      <li style="background-color: #0059F7; height: 2px; margin-top: 0; padding-top: 0;">
+        <a>&nbsp;</a>
+     </li>  
+      <li class="sidebar-list-item">
+        <a href="/mental-training">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> -->
+          <span>Mental Training</span>
+        </a>
+      </li>
+      <li class="sidebar-list-item">
+        <a href="/physical-training">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> -->
+          <span>Physical Training</span>
+        </a>
+      </li>
+      <li style="background-color: #0059F7; height: 2px; margin-top: 0; padding-top: 0;">
+        <a>&nbsp;</a>
+     </li>  
+      <li class="sidebar-list-item">
+        <a href="/rewards">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg> -->
+          <span>Rewards</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="app-content">
+    <div class="app-content-header">
+      <h1 class="app-content-headerText">About</h1>
+      </div>
+      
+      <style>
+        .container {
+        display: flex;
+      }
+
+      .box {
+        flex: 1;
+        padding: 20px;
+        background-color: #0059F7;
+        margin-right: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .box h3 {
+        margin-top: 0;
+      }
+
+      .box p {
+        margin-bottom: 0;
+      }
+      </style>
+
+      <div class="container" style="padding-top: 50px;">
+        <div class="box">
+          <h3>Skin Cancer Identification</h3>
+          <div style="background-color: #ffffff; height: 2px; margin-top: 0; padding-top: 0;"></div>
+          <div style="padding-bottom: 10px;"></div>
+          <p style="color: white;">By undertaking this identification process, you will be able to determine whether you have skin cancer or not. Make sure you have a good camera and position your skin well for the most accurate result. You'll also earn 5 points as a reward for your participation.</p>
+        </div>
+        <div class="box">
+          <h3>Lung Cancer Identification</h3>
+          <div style="background-color: #ffffff; height: 2px; margin-top: 0; padding-top: 0;"></div>
+          <div style="padding-bottom: 10px;"></div>
+          <p style="color: white;">By undertaking this identification process, you will be able to determine whether you have lung cancer or not. Make sure to answer all 15 questions with the option that most accuratly describes you. You'll also earn 5 points as a reward for your participation.</p>
+        </div>
+        <div class="box">
+          <h3>Mental Training</h3>
+          <div style="background-color: #ffffff; height: 2px; margin-top: 0; padding-top: 0;"></div>
+          <div style="padding-bottom: 10px;"></div>
+          <p style="color: white;">Through the utilization of mental training, you have the ability to stay mentally fit and maintain good health, regardless of whether you are dealing with cancer or not. This practice empowers you to prioritize your well-being. You'll also earn 1 point per mental training assignment as a reward for your work.</p>
+        </div>
+        <div class="box">
+          <h3>Physical Training</h3>
+          <div style="background-color: #ffffff; height: 2px; margin-top: 0; padding-top: 0;"></div>
+          <div style="padding-bottom: 10px;"></div>
+          <p style="color: white;">By engaging in regular physical training, you can enhance your physical fitness and overall health, irrespective of whether you are affected by cancer or not. Embracing this practice empowers you to prioritize your physical well-being. You'll also earn 1 point per mental training assignment as a reward for your work.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
