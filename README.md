@@ -11,7 +11,7 @@
 
 -Mental Training: https://creator.voiceflow.com/prototype/644dc245d0125e2d5e52ee1c
 
--https://creator.voiceflow.com/prototype/644dcb469e62b46d9a1d7666
+-Physical Training: https://creator.voiceflow.com/prototype/644dcb469e62b46d9a1d7666
 
 ## Inspiration
 
